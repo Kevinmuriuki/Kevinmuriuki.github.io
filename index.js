@@ -1,3 +1,10 @@
+const username = 'Kevinmuriuki';
+const maxPages = 2;
+const hideForks = true;
+const repoList = document.querySelector('.repo-list');
+const reposSection = document.querySelector('.repos');
+const filterInput = document.querySelector('.filter-repos');
+
 var TxtType = function (t, e, i) {
     (this.toRotate = e), (this.el = t), (this.loopNum = 0), (this.period = parseInt(i, 10) || 2e3), (this.txt = ""), this.tick(), (this.isDeleting = !1);
 };
