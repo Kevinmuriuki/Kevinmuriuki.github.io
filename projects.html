@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal site of Kevin Muriuki, Muriuki's Space.">
+    <title>Muriuki's Projects</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="mobile-menu-open" class="shadow-large">
+        <i class="fa fa-bars" arial-hidden="true"></i>
+    </div>
+
+    <nav>
+        <header>
+            <div id="mobile-menu-close">
+                <i class="fa fa-window-close shadow-large" aria-hidden="true"></i>
+            </div>
+            <ul id="menu" class="shadow">
+                <li>
+                    <a href="./index.html">Home</a>
+                </li>
+                <li>
+                    <a href="#projects">Projects</a>
+                </li>
+            </ul>
+        </header>
+    </nav>
+
+    <section id="lead">
+        <h1>All Of My Projects</h1>
+        <small>Some useful, some stupid, all fun!</small>
+        <div id="lead-proj-content">
+            <div class="user-info">
+
+            </div>
+        </div>
+        
+        <div id="lead-down">
+           <span>
+            <a href="#about">
+                <i class="fa fa-chevron-down" title="More"></i>
+            </a>
+           </span>
+        </div>
+    </section>
+    <section id="projects" class="repos">
+        <input type="text" class="filter-repos" placeholder="Search Projects">
+        <ul class="repo-list">
+
+        </ul>
+    </section>
+    <footer>
+        <div class="top">
+            <span id="to-top">
+                <a href="#lead"><i class="fa fa-chevron-up" title="Top"></i></a>
+            </span>
+        </div>
+        <div class="copyright">
+            <p>Made with ❤ by Kevin Muriuki</p>
+        </div>
+    </footer>
+
+    <!-- Fixes for Firefox and IE -->
+    <script>
+        var isIE = !!window.MSInputMethodContext && !!document.documentMode;
+        var isFirefox = navigator.userAgent.toLowerCase().indexOf("firefox") > -1;
+
+        if (isIE || isFirefox) {
+            var font = document.createElement("link");
+            font.rel = "stylesheet";
+            font.type = "text/css";
+            font.href = "https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap";
+            document.head.appendChild(font);
+            var fontAwesome = document.createElement("link");
+            fontAwesome.rel = "stylesheet";
+            fontAwesome.type = "text/css";
+            fontAwesome.href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css";
+            document.head.appendChild(fontAwesome);
+            var devicon = document.createElement("link");
+            devicon.rel = "stylesheet";
+            devicon.type = "text/css";
+            devicon.href = "https://cdnjs.cloudflare.com/ajax/libs/devicon/2.4/devicon.min.css";
+            document.head.append(devicon);
+            var bootstrap = document.createElement("link");
+            bootstrap.rel = "stylesheet";
+            bootstrap.type = "text/css";
+            bootstrap.href = "https://cdnjs.cloudflare.com/ajax/libs/devicon/2.4/devicon.min.css";
+            document.head.append(bootstrap);
+        }
+    </script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
