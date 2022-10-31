@@ -272,12 +272,17 @@ footer {
     padding: 15px;
     overflow: hidden;
 }
-#lead-content {
+#lead-content, #lead-proj-content {
     z-index: 10;
     text-align: center;
-    padding: 30vmin;
     position: relative;
     filter: drop-shadow(0 0 10px var(--accent));
+}
+#lead-content {
+    padding: 30vmin;
+}
+#lead-proj-content {
+    padding: 2vmin 30vmin;
 }
 #lead-content h1,
 #lead-content h2 {
