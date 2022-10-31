@@ -1,13 +1,11 @@
-@media (prefers-color-scheme: dark) {
-    :root {
-        --text: #dedede;
-        --accent: #1688f0;
-        --light: #efefef;
-        --gray: #7e8890;
-        --bg-main: #000;
-        --border-accent: #dcd9d9;
-        --bg-user: #0a0a0f;
-    }
+:root {
+    --text: #dedede;
+    --accent: #1688f0;
+    --light: #efefef;
+    --gray: #7e8890;
+    --bg-main: #000;
+    --border-accent: #dcd9d9;
+    --bg-user: #0a0a0f;
 }
 
 body {
