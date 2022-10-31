@@ -70,3 +70,34 @@ var TxtType = function (t, e, i) {
         });
 })(jQuery);
 
+// get information from github profile
+const getProfile = async () => {
+    const res = await fetch(
+        `https://api.github.com/users/${username}`
+    );
+    const profile = await res.json();
+    displayProfile(profile);
+};
+getProfile();
+
+// display infomation from github profile
+const displayProfile = (profile) => {
+    const userInfo = document.querySelector('.user-info');
+    userInfo.innerHTML = `
+        <figure>
+            <img id="me" alt="user avatar" src=${profile.avatar_url} />
+        </figure>
+        <div>
+            <h2><a href=${profile.blog}><strong>${profile.name}</strong></a></h2>
+            <p>${profile.bio}</p>
+            <p>
+                <strong>Location:</strong> ${profile.location}
+            </p>
+            <p>
+                <strong>@${profile.login} </strong>
+                Repos: ${profile.public_repos}
+                Gists: ${profile.public_gists}
+            </p>
+        </div>
+    `;
+};
