@@ -776,9 +776,19 @@ h3 {
     }
 }
 
+@media (max-width: 450px) {
+    #lead-proj-content {
+        padding: 2rem 2rem;
+    }
+    .user-info div p {
+        margin: 10px;
+    }
+}
+
+
 @media (max-width: 700px) {
     #lead-proj-content {
-        padding: 2vmin 10vmin;
+        padding: 2vmin 5vmin;
     }
     .user-info div p {
         margin: 10px;
@@ -789,13 +799,4 @@ h3 {
     .repo-list li {
         width: 30%;
     }
-}
-
-
-
-#lead-content {
-    padding: 30vmin;
-}
-#lead-proj-content {
-    padding: 2vmin 30vmin;
 }
